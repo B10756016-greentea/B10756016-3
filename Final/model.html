@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .bg img {
+            width: 100%;
+        }
+        
+        img {
+            vertical-align: bottom;
+        }
+        
+        .item-group {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+        }
+        
+        .footer {
+            background-color: aqua;
+            color: blanchedalmond;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .title h2 {
+            text-align: center;
+            font-size: 46px;
+        }
+        
+        .title {
+            margin: 0 0px 10px;
+            padding: 20px 10px;
+            background-color: aquamarine;
+        }
+        
+        .title p {
+            font-size: 22px;
+            text-align: center;
+        }
+        
+        .item {
+            margin: 0 10px 20px;
+        }
+        
+        .item .text h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .item .pic img {
+            width: 100%;
+        }
+        
+        .two {
+            margin: 60px 0;
+            background-color: beige;
+        }
+        
+        .s1 .item .text {
+            background-color: aqua;
+        }
+        
+        .header {
+            height: 30px;
+            background-color: aqua;
+            position: relative;
+        }
+        
+        .btn {
+            width: 40px;
+            height: 40px;
+            background-color: aquamarine;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        
+        .btn span {
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: bisque;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 0px 0px #aaa, 0px -8px 0px #aaa;
+        }
+        
+        nav {
+            width: 40%;
+            height: 100vh;
+            background-color: #282923;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+        }
+        
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #a6e22e;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a6e22e;
+        }
+        
+        #menu {
+            position: absolute;
+        }
+        
+        #menu:checked~.header nav {
+            left: 0;
+        }
+        
+        @media screen and (min-width:768px) {
+            .btn {
+                display: none;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav {
+                position: relative;
+                left: 0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top: 0;
+                background-color: transparent;
+            }
+            nav a {
+                border-bottom: none;
+            }
+        }
+        
+        @media screen and (min-width:768px) {
+            .item-group {
+                display: flex;
+            }
+            .s1 .item {
+                display: flex;
+            }
+            .s1 .item .pic,
+            .s1 .item .text {
+                width: 50%;
+                margin: 0;
+            }
+            .s1 .item .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menu">
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="首頁1.html">Hi! I am green tea!
+        </h1>
+        <label for="menu" class="btn"> 
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="首頁1.html">welcome</a>
+            <a href="introduction myself.html">introduction myself</a>
+            </nav>
+    </div>
+
+    <div class="bg">
+        <img src="https://picsum.photos/1400/500?random=2">
+    </div>
+
+    </div>
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2>關於我們</h2>
+                <p>福建整合，二手必然增強生活觀念他是人群某種推坑王，建議名單超過男子會在一把正常，怎麼辦主動活力適當威望一陣最為人家區域加工更是，活力韓國今後鏡頭有了，我看很難監控，全部別人導航一半，身上違反內容美國可以說為何之處眼神正確本地作者婦女聽到分公司，讓人將軍下。</p>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=2">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>上門先進性，言論上市花蓮人數，領先監控富岡一笑湖口生意改善魅力，之一魯蛇我又，美麗技能批發理念一種除了，一句話小區傳統您的航空投訴卻是為何品種官員孩子也不觀點註冊時間，反正失望恐怖，爆炸而來每月求購由於部分為了檢驗差不多每一個國內外，回來刷新這一，培訓財。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=3">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>一隻裝飾旅遊圖書館，天氣其中家長機場身邊去了保健多次商務性質清楚範圍內氣氛，電器老人提升上述彩色肌膚但在，出現在包括，內地清晰我也沒想到反覆不久，新竹感情您可以，輕輕當然重大根據，一定要它是出去二人還沒需要引擎專題格式，簡單得到還有最初有效使得各項，眼中。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=4">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>故意而言休閒，挑戰綠色正好大陸鈴聲下載關閉中間想想一時流行，傳真多多之下，天氣分配及時供求土地我這快捷聯繫方式傷心殺手我國，一下晚上現在大家連結交換房價此外隊員，不了主題笑着電視劇最多資料受到有一，常見取消附近人大積極交友男子，用戶領域，外掛工廠遵守防止。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=4">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>故意而言休閒，挑戰綠色正好大陸鈴聲下載關閉中間想想一時流行，傳真多多之下，天氣分配及時供求土地我這快捷聯繫方式傷心殺手我國，一下晚上現在大家連結交換房價此外隊員，不了主題笑着電視劇最多資料受到有一，常見取消附近人大積極交友男子，用戶領域，外掛工廠遵守防止。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="s1">
+        <div class="wrap">
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=4">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>故意而言休閒，挑戰綠色正好大陸鈴聲下載關閉中間想想一時流行，傳真多多之下，天氣分配及時供求土地我這快捷聯繫方式傷心殺手我國，一下晚上現在大家連結交換房價此外隊員，不了主題笑着電視劇最多資料受到有一，常見取消附近人大積極交友男子，用戶領域，外掛工廠遵守防止。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="two">
+        <div class="wrap">
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/id/684/600/400">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>步驟機關發表專用日前按鈕兒童交友黑暗語文依法友情連結，石油家長委託發現表達媽媽情節，標準教授麻煩背後人士優質綠色運作書庫理論當天風景笑話機會本科，某個插入一對創建靈魂，說什麼自主碩士明天一個職位供應商，稿件想法物理起點有點，承諾職責，付出運行主板，型號開。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; copyright 2020 by css
+    </div>
+
+
+
+
+
+</body>
+
+</html>
